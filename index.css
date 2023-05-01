@@ -24,7 +24,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-span{
+#dic{
     position: absolute;
     top: 0;
     width: 100%;
@@ -36,6 +36,8 @@ span{
     text-align: center;
     padding: 20px;
     box-shadow: 0 0 15px black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 #wrapper{
     position: relative;
@@ -43,8 +45,6 @@ span{
     min-width: 30vw;
     width: 70vw;
     height: 50vh;
-    margin: 10px;
-    padding: 30px;
     border-radius: 10px;
     border: 2px solid #2b2b54;
     box-shadow: 0 0 20px rgb(19, 19, 71);
@@ -55,35 +55,41 @@ span{
 }
 #main{
     position: absolute;
-    top: 30px;
-    margin: 20px ;
-    padding: 0 30px;
+    top: 50px;
 }
 input{
-    float: left;
+    position: relative;
     padding: 20px;
     border-radius: 30px;
     border: none;
-    width: 50vw;
+    width: 40vw;
     height: 7vh;
     font-size: 16px;
     margin-bottom: 15px;
 }
-.btn{
-    letter-spacing: 2px;
-}
 button{
+    position: absolute;
+    right: 0px;
+    float: left;
     border: none;
     outline: none;
-    margin: auto -50px ;
-    width: 13vw;
+    width: 8vw;
     height: 7vh;
     border-radius: 30px;
     background-color: #033874;
-    color: white;
     cursor: pointer;
+    color: white;
+    float: right;
+    padding: 10px; 
+}
+button #search{
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
-ol li{
+#search{
+    display: block;
+}
+ol{
+    padding: 20px;
     margin-left: 20px;
 }
