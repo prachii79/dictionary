@@ -5,9 +5,9 @@ const list_container= document.getElementById("listContainer")
 
  async function any(){
     try{
+        list_container.innerHTML = '';
         const dicObj = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${inField.value}`);
         const dicObjJSON = await dicObj.json()
-        console.log(dicObjJSON)
         dicObjJSON.forEach(el => {
             const meanArray = el.meanings
             meanArray.forEach(mean => {
@@ -20,7 +20,7 @@ const list_container= document.getElementById("listContainer")
                     list_container.appendChild(li);
                 })
             })  
-        })
+        })     
     } catch(err){
         console.log(err)
     }
